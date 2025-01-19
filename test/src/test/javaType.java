@@ -16,8 +16,9 @@ public class javaType {
 //		이사람이 단축된 수명이 총 몇분인가? 출력
 //		이사람이 단축된 수명은 총 몇 시간인가? 출력
 //		이사람이 단축된 수명이 총 몇일인가? 출력
+		
 		int smoke_num = 3;
-		int minute = smoke_num*2*30*12*20; // 단축된 수명 분
+		int minute = smoke_num*2*365*20; // 단축된 수명 분
 		int time = minute/60; // 단축된 시간
 		int day = time/24; // 단축된 일수
 		System.out.println(minute);
