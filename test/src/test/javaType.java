@@ -21,8 +21,8 @@ public class javaType {
 		int minute = smoke_num*2*365*20; // 단축된 수명 분
 		int time = minute/60; // 단축된 시간
 		int day = time/24; // 단축된 일수
-		System.out.println(minute);
-		System.out.println(time);
-		System.out.println(day);
+		System.out.println(minute); // 단축된 분
+		System.out.println(time); // 단축된 시간
+		System.out.println(day); // 단축된 일수
 	}
 }
