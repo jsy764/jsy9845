@@ -32,10 +32,21 @@ public class test2 {
 		 * 과일은 총 몇개인가?
 		 */
 		
-		int applebox = 11; // 사과 상자의 개수
-		int orangebox = 12; // 오렌지 상자의 개수
-		int apple = applebox * 20; // 사과의 개수
-		int orange = orangebox * 15; // 오렌지의 개수
-		System.out.println("과일의 총 개수: " + (apple+orange)); // 과일의 총 개수
+		// int applebox = 11; // 사과 상자의 개수
+		// int orangebox = 12; // 오렌지 상자의 개수
+		// int apple = applebox * 20; // 사과의 개수
+		// int orange = orangebox * 15; // 오렌지의 개수
+		// System.out.println("과일의 총 개수: " + (apple+orange)); // 과일의 총 개수
+		
+		int applebox = 11; // 사과상자의 개수
+		int apple = 20; // 상자 안 사과의 개수
+		int orangebox = 12; // 오렌지상자의 개수
+		int orange = 15; // 상자 안 오렌지의 개수
+		int apple_total = applebox * apple; // 총 사과의 개수
+		int orange_total = orangebox * orange; // 총 오렌지의 개수
+		int fruit_total = apple_total + orange_total; // 총 과일의 수
+		System.out.println("총 과일수 : " + fruit_total);
+		
+		
 	}
 }
