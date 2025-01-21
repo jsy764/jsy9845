@@ -18,7 +18,13 @@ public class test2 {
 		// 2. 입력 객체를 통해 데이터에 맞는 입력메서드 호출
 		
 		// Scanner 변수이름 = new Scanner(System.in);
-		// Scanner input = new Scanner(System.in);
+		// 사각형의 너비와 높이를 통해 입력받고 넓이를 계산하여 출력해라.
+		 Scanner sc = new Scanner(System.in);
+		 System.out.println("너비입력 : ");
+		 int width = sc.nextInt();
+		 System.out.println("높이입력 : ");
+		 int height = sc.nextInt();
+		 System.out.println("사각형의 넓이 : " + width*height);
 		
 		// num 이라는 변수에 정수 데이터 입력하여 저장하기
 		// nextInt()가 정수 데이터 입력하기 위한 메서드이다.
@@ -46,7 +52,5 @@ public class test2 {
 		int orange_total = orangebox * orange; // 총 오렌지의 개수
 		int fruit_total = apple_total + orange_total; // 총 과일의 수
 		System.out.println("총 과일수 : " + fruit_total);
-		
-		
 	}
 }
