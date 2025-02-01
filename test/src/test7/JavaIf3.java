@@ -20,19 +20,45 @@ public class JavaIf3 {
 		
 		Scanner sc = new Scanner(System.in);
 		int default_time = 30;
+		int default_time2 = 120;
+		int default_time3 = 240;
 		int cost=1000;
+		int cost2 = 1700;
+		int cost3 = 2500;
+		int cost4 = 10000;
 		int pTime=0;
 		int tenM=100;
 		
 		System.out.print("주차 시간(분) : ");
 		pTime=sc.nextInt();
 		
-		if(0<pTime && pTime<=39) {
+		if(0<pTime && pTime<=39)
 			System.out.println("주차 요금 : "+cost);
-		} else {
+		else if(119>=pTime){
 			pTime=pTime-default_time;
 			cost = (pTime/10)*tenM+cost;
-			System.out.println("주차 요금 : "+cost);
-		} 
+			if(cost<=1700)
+				System.out.println("주차 요금 : "+cost);
+			else
+				System.out.println("주차 요금 : "+1700);
+		}
+		else if(239>=pTime){
+			pTime=pTime-default_time2;
+			cost2 = (pTime/10)*tenM+cost2;
+			if(cost<=2500)
+				System.out.println("주차 요금 : "+cost2);
+			else
+				System.out.println("주차 요금 : "+2500);
+		}
+		else if(479>=pTime) {
+			pTime=pTime-default_time3;
+			cost3 = (pTime/10)*tenM+cost3;
+			if(cost<=10000)
+				System.out.println("주차 요금 : "+cost3);
+			else
+				System.out.println("주차 요금 : "+10000);
+		}
+		else
+			System.out.println("주차 요금 : "+cost4);
 	}
 }
