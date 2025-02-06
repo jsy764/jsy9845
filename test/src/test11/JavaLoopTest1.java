@@ -78,8 +78,11 @@ public class JavaLoopTest1 {
 //		숫자를 몇개를 제시할 것인지 갯수를 입력하면 자동으로 숫자가 나온다.
 //		컴퓨터는 렌덤을 이용해서 몇개 재시험할것인지 해야한다.
 //		숫자는 1개부터 3개까지 가능
-		
-		
+		int num=0;
+		while(true) {
+			num = sc.nextInt();
+			
+		}
 		
 		
 		
