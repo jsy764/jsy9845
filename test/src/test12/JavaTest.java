@@ -80,6 +80,99 @@ public class JavaTest {
 //	  	 결과 : 0스트라이크 1볼 2아웃
 //	  	 입력 : 4 1 8
 //	  	 결과 : 2스트라이크 0볼 1아웃
-		
+		int a, b, c, num1, num2, num3;
+		while(true) {
+			a = (int)(Math.random()*9+1);
+			b = (int)(Math.random()*9+1);
+			c = (int)(Math.random()*9+1);
+			if(a!=b && a!=c && b!=c)
+				break;
+		}
+		while(true) {
+			System.out.print("num1 숫자입력: ");
+			num1 = sc.nextInt();
+			System.out.print("num2 숫자입력: ");
+			num2 = sc.nextInt();
+			System.out.print("num3 숫자입력: ");
+			num3 = sc.nextInt();
+			if(a==num1&&b==num2&&c==num3) {
+				System.out.println("3스트라이크 0볼 0아웃");
+				break;
+			} else if((a==num1&&b==num2)||(b==num2&&c==num3)||(a==num1&&c==num3)) { 
+				System.out.println("2스트라이크 0볼 1아웃");
+			} else if(a==num1) {
+				if(b==num3 && c==num2) 
+						System.out.println("1스트라이크 2볼 0아웃");
+				else if(b==num3 || c==num2)
+					System.out.println("1스트라이크 1볼 1아웃");
+				else 
+					System.out.println("1스트라이크 0볼 2아웃");
+			}else if(b==num2) {
+				if(a==num3 && c==num1) 
+					System.out.println("1스트라이크 2볼 0아웃");
+				else if(a==num3 || c==num1)
+					System.out.println("1스트라이크 1볼 1아웃");
+				else 
+					System.out.println("1스트라이크 0볼 2아웃");
+			}else if(c==num3) {
+				if(a==num2 && b==num1) 
+					System.out.println("1스트라이크 2볼 0아웃");
+				else if(a==num2 || b==num1)
+					System.out.println("1스트라이크 1볼 1아웃");
+				else 
+					System.out.println("1스트라이크 0볼 2아웃");
+			}else if(a!=num1&&b!=num2&&c!=num3) {
+				if(a==num2) {
+					if(b==num3&&c==num1)
+						System.out.println("0스트라이크 3볼 0아웃");
+					else if(b==num3||c==num1)
+						System.out.println("0스트라이크 2볼 1아웃");
+					else
+						System.out.println("0스트라이크 1볼 2아웃");
+				}
+				else if(a==num3) {
+					if(b==num1&&c==num2)
+						System.out.println("0스트라이크 3볼 0아웃");
+					else if(b==num1||c==num2)
+						System.out.println("0스트라이크 2볼 1아웃");
+					else
+						System.out.println("0스트라이크 1볼 2아웃");
+				}
+				else if(b==num1) {
+					if(a==num3&&c==num2)
+						System.out.println("0스트라이크 3볼 0아웃");
+					else if(a==num3||c==num2)
+						System.out.println("0스트라이크 2볼 1아웃");
+					else
+						System.out.println("0스트라이크 1볼 2아웃");
+				}
+				else if(b==num3) {
+					if(a==num2&&c==num1)
+						System.out.println("0스트라이크 3볼 0아웃");
+					else if(a==num2||c==num1)
+						System.out.println("0스트라이크 2볼 1아웃");
+					else
+						System.out.println("0스트라이크 1볼 2아웃");
+				}
+				if(c==num1) {
+					if(a==num2&&b==num3)
+						System.out.println("0스트라이크 3볼 0아웃");
+					else if(a==num2||b==num3)
+						System.out.println("0스트라이크 2볼 1아웃");
+					else
+						System.out.println("0스트라이크 1볼 2아웃");
+				}
+				else if(c==num2) {
+					if(a==num3&&b==num1)
+						System.out.println("0스트라이크 3볼 0아웃");
+					else if(a==num3||b==num1)
+						System.out.println("0스트라이크 2볼 1아웃");
+					else
+						System.out.println("0스트라이크 1볼 2아웃");
+				}
+				else if(a!=num1 && a!=num2 && a!=num3 && b!=num1 && b!=num2 && b!=num3 && c!=num1 && c!=num2 && c!=num3)
+					System.out.println("0스트라이크 0볼 3아웃");	
+			}
+		}
 	}
 }
