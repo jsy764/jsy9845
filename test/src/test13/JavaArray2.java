@@ -120,7 +120,7 @@ public class JavaArray2 {
 		int[] arr = new int[15];
 		int num;
 		for(int i=0; i<15; i++) {
-			num = (int)(Math.random()*50+1);
+			num = (int)(Math.random()*25+1)*2;
 			 if(num%2==0) 
 					arr[i] = num;
 		}
