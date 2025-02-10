@@ -119,20 +119,14 @@ public class JavaArray2 {
 		// 오늘의 과제는 랜덤 범위 1~50의 랜덤 숫자 중에서 짝수 15개를 배열에 저장하고 15개 전부 저장되면 배열을 출력해하. 슛자 중복은 상관없음
 		int[] arr = new int[15];
 		int num;
-		 while(true){
+		for(int i=0; i<15; i++) {
 			num = (int)(Math.random()*50+1);
-			for(int i=0; i<15; i++) {
-				if(num%2==0) 
+			 if(num%2==0) 
 					arr[i] = num;
-				if(arr[15] != 0) break;
-			}
 		}
-//		 for(int i=0; i<15; i++) {
-//				System.out.print(arr[i]+" "); 
-		 
-		 
-		 
-		
+
+		 for(int i=0; i<15; i++) {
+				System.out.print(arr[i]+" "); 
 		 }
 	}
 }
