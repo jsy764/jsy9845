@@ -117,15 +117,6 @@ public class JavaString2 {
 		// - \d{6}\-[1-4]\d{6}
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }
