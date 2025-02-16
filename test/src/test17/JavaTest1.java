@@ -85,12 +85,8 @@ public class JavaTest1 {
 					num--;
 				if(arr[y][x]!=0)
 					num = n;
-				if(num==0) {
-					if(x>=1)
-					System.out.printf("좌석[%d][%d]에 배치되었습니다.", y+1, x-n+1);
-					if((x-n+1)<1)
-					System.out.printf("좌석[%d][%d]에 배치되었습니다.", y, 10-(x-n+1));
-				}
+				if(num==0)
+					System.out.printf("좌석[%d][%d]에 배치되었습니다.", y, x);
 			}
 		}
 		System.out.println();
