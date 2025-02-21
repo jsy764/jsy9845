@@ -30,8 +30,35 @@ public class ClassArray {
 //			System.out.println(members[i].age);
 //		}
 		
-		Member info = new Member();
+//		Movie movie = new Movie();
+//		movie.title = "국제시장";
+//		movie.genre = "드라마";
+//		movie.audience = 14260000;
+//		movie.release = 2024;
+//		
+//		System.out.println("영화제목 : "+movie.title);
+//		System.out.println("장르 : "+movie.genre);
+//		System.out.println("관객수 : "+movie.audience);
+//		System.out.println("개봉년도 : "+movie.release);
+		
+//		Member info = new Member();
+//		System.out.println(info);
+//		System.out.println(info.name);
+//		
+//		Member m1 = new Member();
+//		System.out.println(m1.name);
+		
+		Member info = new Member(20, "군인", "김유신");
+		System.out.println(info.job);
+		
 		
 	}
 
 }
+
+/*
+	영화제목, 장르, 관객수, 개봉년도
+
+	위 항목의 데이터를 저장할 수 있는 클래스를 정의
+	영화 한편에 대한 데이터 입력하고 출력까지
+*/
