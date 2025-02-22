@@ -32,7 +32,43 @@ public class JavaMethod {
 	
 	//반환,매개변수가 있는 메서드 name.equals("박문수");
 	
+	static String game(int val) { // 1-가위, 2-바위, 3-보
+		if(val==1)
+			return "가위";
+		if(val==2)
+			return "바위";
+		if(val==3)
+			return "보";
+		return "잘못입력"; // 반환이 있는 메서드에서 if문으로 return을 했다면 
+		// 참인 경우에만 동작할 수 있기 때문에 별도의 return이 필요
+	}
+	
+	// 두개 정수중 큰 값 출력하는거 만들기
+	// 두 정수 비교하고 출력하는 메서드 필요
+	// 반환없고 매개변수있는 메서드로!!!
+	static void compare(int a, int b) {
+		if(a>b)
+			System.out.println(a);
+		else if(a<b)
+			System.out.println(b);
+		else
+			return;
+	}
+	//국어점수 : 88, 영어점수 : 91, 수학점수 : 74
+	//세과목의 총점과 평균을 출력해라
+	//총점 계산하는 메서드 평균 계산하는 메서드 
+	static int total(int num1, int num2, int num3) {
+		int sum = num1+num2+num3;
+		System.out.println("세과목의 총점 : "+sum);
+		return sum;
+	}
+	static void avg(int sum) {
+		System.out.println("세 과목의 평균 : "+(float)sum/3);
+	}
+	
 	public static void main(String[] args) {
+		String res = game(1); // 1은 가위이다.
+		
 		output();// 이렇게 작성해야 output 메서드 실행된다.
 		// 출력
 		
@@ -45,9 +81,11 @@ public class JavaMethod {
 		int a = 100, b = 232;
 		sum(a, b);	
 		
+		int num1 = 7, num2 = 8;
+		compare(num1, num2);
 		
-		
-		
-		
+		int kor = 88, eng = 91, mat=74;
+		int sum = total(kor, eng, mat);
+		avg(sum);
 	}
 }
