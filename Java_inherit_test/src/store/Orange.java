@@ -13,4 +13,7 @@ public class Orange extends Fruit {
 	public void pieceFruit() {
 		System.out.println("오렌지 세개");
 	}
+	public String toString() {
+		return "오렌지 "+cost+"원 "+capacity+"ml";
+	}
 }

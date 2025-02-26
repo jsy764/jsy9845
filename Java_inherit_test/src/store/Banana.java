@@ -13,4 +13,7 @@ public class Banana extends Fruit {
 	public void pieceFruit() {
 		System.out.println("바나나 세조각");
 	}
+	public String toString() {
+		return "바나나 "+cost+"원 "+capacity+"ml";
+	}
 }

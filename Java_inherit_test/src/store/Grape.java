@@ -13,4 +13,7 @@ public class Grape extends Fruit {
 	public void pieceFruit() {
 		System.out.println("포도 세알");
 	}
+	public String toString() {
+		return "포도 "+cost+"원 "+capacity+"ml";
+	}
 }

@@ -27,5 +27,8 @@ public class Buyer {
 		this.item = item;
 	}
 	
+	public String toString() {
+		return "보유머니 : "+money;
+	}
 	
 }
