@@ -2,7 +2,7 @@ package testMain;
 
 public class MainMethod {
 	
-	public void main(String[] args) {
+	public static void main(String[] args) {
 		Triangle t = new Triangle(10, 20);
 		Rect r = new Rect(20, 10);
 		Circle c = new Circle(10, 0);
