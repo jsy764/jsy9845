@@ -24,21 +24,27 @@ public class Member {
 			age = 10;
 			addr="대전";
 //			dept="컴퓨터공학과";
-			
+	}
+	Member(String name, int age, String addr){
+		this.name = name;
+		this.age = age;
+		this.addr = addr;
+//		dept="컴퓨터공학과";
+	}
 			//인스턴스 메서드
 //			void setName(String name) {
 //				this.name=name;
 //				output(); // 클래스 메서드 호출 가능
 //			}
 //			// 클래스 메서드
-//			static void output(String name) {
+//			static void output() {
 //				setName("이순신"); // 인스턴스 메서드 호출 불가
 //				System.out.println(name); // 인스턴스 변수 사용불가
 //				
 //				int total = a+b+c;
 //				int a = 10, b=20, c=30;
 //			}
-	}
+	
 }
 /*
 	클래스 멤버 변수 초기화 방법
